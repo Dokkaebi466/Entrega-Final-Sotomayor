@@ -64,7 +64,8 @@ ul {
     color: rgb(255, 221, 158);
 }
 .fondoprincipal {
-    background-image: url(/imagenes/nightwishcover-2022.jpg) cover;
+    background-image: url(/imagenes/nightwishcover-2022.jpg) ;
+    object-fit: cover;
     width: 100%;
 }
 .videoinicio{
