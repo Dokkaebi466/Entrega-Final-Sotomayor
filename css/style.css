@@ -19,7 +19,7 @@ ul {
    list-style: none; 
 }
 .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .nav_main {
@@ -190,6 +190,10 @@ margin: 0 5px;
     color: goldenrod;
     font-size: 30px;
 }
+.discografia {
+    width: 80%;
+    margin: auto;
+}
 .discografia h1 {
     text-align: center;
     color: bisque;
@@ -201,11 +205,19 @@ margin: 0 5px;
 }
 .discografia video{
     width: 90%;
-    margin: 0px;
+    margin: auto;
+    align-content: center; 
 }
 .discografia h2 {
     text-align: center;
     margin: 30px;
+}
+.conciertos {
+    width: 90%;
+    margin: auto;
+}
+.conciertos iframe{
+    margin: auto;
 }
 .containerfooter {
     max-width: 1200px;
