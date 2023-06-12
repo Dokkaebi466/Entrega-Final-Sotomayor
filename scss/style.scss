@@ -94,7 +94,9 @@
   }
   
   .sociales {
-    margin: 50px;
+    margin: auto;
+    align-items: center;
+    padding: 20px;
   
     p {
       color: wheat;
@@ -108,12 +110,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
   
     a {
       margin: 0 30px;
   
       i {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
   
@@ -124,14 +127,33 @@
   }
   
   .bandapag {
-    width: 100%;
+    width: 90%;
     height: 90vh;
+    margin: auto;
     background: url(../imagenes/nightwishbanda.jpg) no-repeat center (center / cover);
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+  }
+  .bandapag p {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color:  rgba(0, 0, 0, 0.496);
+    width: 90%;
+    border-radius: 30px;
+    color: bisque;
+  }
+  .bandapag h1 {
+    background-color: rgba(0, 0, 0, 0.614);
+    border-radius: 30px;
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: wheat;
   }
   
   .miembros {
@@ -186,13 +208,16 @@
   .conciertos {
     display: grid;
     grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.534);
   
     iframe {
       width: 90%;
       height: 600px;
       padding: 15px;
-      justify-content: center;
-      align-content: center;
+      display: flex;
+      margin: auto;
     }
   
     h2 {
@@ -200,13 +225,17 @@
       padding: 5px;
       color: goldenrod;
       font-size: 30px;
+      background-color: #8080801d;
+      width: 30%;
+      border-radius: 20px;
+      margin: auto;
     }
   }
   
   .discografia {
-    width: 80%;
+    width: 90%;
     margin: auto;
-  
+    justify-content: center;
     h1 {
       text-align: center;
       color: bisque;
@@ -219,23 +248,15 @@
     }
   
     video {
-      width: 90%;
+      display:flex ;
+      width: 1100px;
       margin: auto;
-      align-content: center;
+      align-items:center ;
     }
   
     h2 {
       text-align: center;
       margin: 30px;
-    }
-  }
-  
-  .conciertos {
-    width: 90%;
-    margin: auto;
-  
-    iframe {
-      margin: auto;
     }
   }
   
@@ -247,7 +268,53 @@
   .formulario div {
     margin: 10px;
   }
+
+  @media screen and (max-width: 1230px) {
+    .discografia {
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+      h1 {
+        text-align: center;
+        color: bisque;
+      }
+    
+      p {
+        text-align: center;
+        padding: 20px;
+        margin: 30px;
+      }
+    
+      video {
+        display:flex ;
+        width: 680px;
+        margin: auto;
+        align-items:center ;
+      }
+    
+      h2 {
+        text-align: center;
+        margin: 30px;
+      }
+    }
+  }
   
+  @media screen and (max-width: 900px) {
+  .conciertos {
+    display: grid;
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.534);
+  
+    iframe {
+      width: 550px;
+      padding: 15px;
+      display: flex;
+      margin: auto;
+    }
+  }
+  }
   @media screen and (max-width: 750px) {
     .cartas img {
       margin: auto;
@@ -270,5 +337,99 @@
       border-radius: 10px;
       color: wheat;
     }
+    .bandapag p {
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+      background-color:  rgba(0, 0, 0, 0.496);
+      width: 90%;
+      border-radius: 30px;
+      color: bisque;
+      font-size: 15px;
+    }
+    .bandapag h1 {
+      background-color: rgba(0, 0, 0, 0.614);
+      border-radius: 30px;
+   
+      text-align: center;
+      margin: auto;
+      padding: 10px;
+      color: wheat;
+      font-size: 25px;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    
+      a {
+        margin: 0 30px;
+    
+        i {
+          font-size: 2rem;
+        }
+      }
+    
+      i:hover {
+        opacity: 0.7;
+        color: wheat;
+      }
+    }
+    .sociales {
+      margin: auto;
+      align-items: center;
+      padding: 20px;
+    
+      p {
+        color: wheat;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .discografia {
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+      h1 {
+        text-align: center;
+        color: bisque;
+      }
+    
+      p {
+        text-align: center;
+        padding: 20px;
+        margin: 30px;
+      }
+    
+      video {
+        display:flex ;
+        width: 400px;
+        margin: auto;
+        align-items:center ;
+      }
+    
+      h2 {
+        text-align: center;
+        margin: 30px;
+      }
+    }
   }
-  
+  @media screen and (max-width: 640px) {
+    .conciertos {
+      display: grid;
+      grid-template-rows: auto;
+      width: 90%;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.534);
+    
+      iframe {
+        width: 300px;
+        height: 300px;
+        padding: 15px;
+        display: flex;
+        margin: auto;
+      }
+    }
+    }
